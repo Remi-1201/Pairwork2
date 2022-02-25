@@ -1,0 +1,8 @@
+<h1><%= @user.name %>のページ</h1>
+<p id="notice"><%= notice %></p>
+<p>メールアドレス: <%= @user.email %></p>
+<div class="contents">
+  <p><div class="content1"><%= link_to 'All Posts', blogs_path %></div></p>
+  <p><div class="content2"><%= link_to 'Make new Post', new_blog_path %></div></p>
+  <%= button_to "Logout", session_path(current_user.id), method: :delete,class: 'button1' %>
+</div> 
