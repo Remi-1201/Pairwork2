@@ -9,7 +9,9 @@
   <% if @favorites.empty? %>
     <h2>まだお気に入りがありません。</h2>
   <% else %>
-    <h2>お気に入りリスト</h2>    
+    <h2>お気に入り<%= @favorites.count %> 件</h2>    
+    <h2>お気に入られた件数 <%= @favorited_total_counts %> 件</h2> 
+
   <% end %>
 <div class="notice">
   <p id="notice"><%= notice %>
